@@ -4,6 +4,7 @@ import RaniumButton from './RaniumButton.vue';
 
 const meta: Meta<typeof RaniumButton> = {
   component: RaniumButton,
+  tags: ['autodocs'],
   argTypes: {
     label: { control: 'text' },
     disabled: { control: 'boolean' },
