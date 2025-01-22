@@ -1,7 +1,17 @@
 <template>
   <h1>Welcome Nuxt to Storybook</h1>
-  <NuxtWelcome />
+   <RaniumButton
+    label="Click Me"
+    variant="primary"
+    :disabled="false"
+    @click="onButtonClick"
+  /> 
 </template>
+<script lang="ts" setup>
+    const onButtonClick: () => void = () => {
+        console.log("Button clicked!");
+    };
+</script>
 
 <style>
 .readmore {
